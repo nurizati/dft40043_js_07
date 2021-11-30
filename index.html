@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markah</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <table border="1" width="100%" cellpadding="10" cellspacing="0">
+        <form name="Myform" action="" method="post"></form>
+        <tr bgcolor="gray">
+            <th width="100">Subjek</th>
+            <th width="100" >Markah</th>
+            <th width="100">GRED</th>
+        </tr>
+
+        <tr align="center">
+            <td bgcolor="gray">BM 1</td>
+            <td>
+                <input type="number" id="markah" name="markah" required onchange ="gred(this.value,'bm1');" onkeyup="gred(this.value,'bm1');">
+            </td>
+            <td width="8%" align="center" id="bm1"><br></td>
+        </tr>
+        <tr align="center" >
+            <td bgcolor="gray">BM 2</td>
+            <td >
+                <input type="number" id="markah1" name="markah1" required onchange ="gred(this.value,'bm2');" onkeydown="gred(this.value,'bm1');">
+            </td>
+            <td width="8%" align="center" id="bm2"></td>
+        </tr>
+        <tr align="center">
+            <td bgcolor="gray">BI</td>
+            <td>
+                <input type="number" id="markah2" name="markah2" required onchange ="gred(this.value,'bi');">
+            </td>
+            <td width="8%" align="center" id="bi"></td>
+        </tr>
+        <tr align="center">
+            <td bgcolor="gray">SAINS</td>
+            <td>
+                <input type="number" id="markah3" name="markah3" required onchange ="gred(this.value,'sains');"> 
+            </td>
+            <td width="8%" align="center" id="sains"></td>
+        </tr>
+        <tr align="center" 
+        >
+            <td bgcolor="gray">MATH</td>
+            <td>
+                <input type="number" id="markah4" name="markah4" required onchange ="gred(this.value,'math');">
+            </td>
+            <td width="8%" align="center" id="math"></td>
+        </tr>
+
+    </table>
+</body>
+</html>
